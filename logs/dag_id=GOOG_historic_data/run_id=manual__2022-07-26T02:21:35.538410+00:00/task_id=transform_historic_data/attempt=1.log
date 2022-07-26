@@ -1,0 +1,32 @@
+[2022-07-26 02:21:40,257] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: GOOG_historic_data.transform_historic_data manual__2022-07-26T02:21:35.538410+00:00 [queued]>
+[2022-07-26 02:21:40,273] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: GOOG_historic_data.transform_historic_data manual__2022-07-26T02:21:35.538410+00:00 [queued]>
+[2022-07-26 02:21:40,274] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-26 02:21:40,274] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2022-07-26 02:21:40,274] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-26 02:21:40,293] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): transform_historic_data> on 2022-07-26 02:21:35.538410+00:00
+[2022-07-26 02:21:40,297] {standard_task_runner.py:52} INFO - Started process 11886 to run task
+[2022-07-26 02:21:40,300] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'GOOG_historic_data', 'transform_historic_data', 'manual__2022-07-26T02:21:35.538410+00:00', '--job-id', '69', '--raw', '--subdir', 'DAGS_FOLDER/open_options.py', '--cfg-path', '/tmp/tmp9a_3hup0', '--error-file', '/tmp/tmpp2kr6eox']
+[2022-07-26 02:21:40,302] {standard_task_runner.py:80} INFO - Job 69: Subtask transform_historic_data
+[2022-07-26 02:21:40,361] {task_command.py:371} INFO - Running <TaskInstance: GOOG_historic_data.transform_historic_data manual__2022-07-26T02:21:35.538410+00:00 [running]> on host 527e7914f635
+[2022-07-26 02:21:40,430] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=vardhan
+AIRFLOW_CTX_DAG_ID=GOOG_historic_data
+AIRFLOW_CTX_TASK_ID=transform_historic_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-26T02:21:35.538410+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-26T02:21:35.538410+00:00
+[2022-07-26 02:21:40,687] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/open_options.py", line 179, in transform_historic_data
+    for item in data['candles']:
+KeyError: 'candles'
+[2022-07-26 02:21:40,701] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=GOOG_historic_data, task_id=transform_historic_data, execution_date=20220726T022135, start_date=20220726T022140, end_date=20220726T022140
+[2022-07-26 02:21:40,718] {standard_task_runner.py:97} ERROR - Failed to execute job 69 for task transform_historic_data ('candles'; 11886)
+[2022-07-26 02:21:40,753] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-07-26 02:21:40,848] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

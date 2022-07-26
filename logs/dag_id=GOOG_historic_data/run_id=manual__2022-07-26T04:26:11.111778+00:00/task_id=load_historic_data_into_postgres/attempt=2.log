@@ -1,0 +1,44 @@
+[2022-07-26 04:27:21,125] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: GOOG_historic_data.load_historic_data_into_postgres manual__2022-07-26T04:26:11.111778+00:00 [queued]>
+[2022-07-26 04:27:21,135] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: GOOG_historic_data.load_historic_data_into_postgres manual__2022-07-26T04:26:11.111778+00:00 [queued]>
+[2022-07-26 04:27:21,135] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-26 04:27:21,135] {taskinstance.py:1377} INFO - Starting attempt 2 of 2
+[2022-07-26 04:27:21,135] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-26 04:27:21,150] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): load_historic_data_into_postgres> on 2022-07-26 04:26:11.111778+00:00
+[2022-07-26 04:27:21,157] {standard_task_runner.py:52} INFO - Started process 61456 to run task
+[2022-07-26 04:27:21,160] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'GOOG_historic_data', 'load_historic_data_into_postgres', 'manual__2022-07-26T04:26:11.111778+00:00', '--job-id', '179', '--raw', '--subdir', 'DAGS_FOLDER/open_options.py', '--cfg-path', '/tmp/tmp25dhigy6', '--error-file', '/tmp/tmpmow0utke']
+[2022-07-26 04:27:21,161] {standard_task_runner.py:80} INFO - Job 179: Subtask load_historic_data_into_postgres
+[2022-07-26 04:27:21,229] {task_command.py:371} INFO - Running <TaskInstance: GOOG_historic_data.load_historic_data_into_postgres manual__2022-07-26T04:26:11.111778+00:00 [running]> on host 527e7914f635
+[2022-07-26 04:27:21,343] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=vardhan
+AIRFLOW_CTX_DAG_ID=GOOG_historic_data
+AIRFLOW_CTX_TASK_ID=load_historic_data_into_postgres
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-26T04:26:11.111778+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-26T04:26:11.111778+00:00
+[2022-07-26 04:27:21,728] {base.py:68} INFO - Using connection ID 'postgres_optionsdata' for task execution.
+[2022-07-26 04:27:21,738] {dbapi.py:231} INFO - Running statement: INSERT INTO historic__GOOG (datetime, high, low, open, close, volume, symbol) VALUES (1654691040000, 116.95, 116.95, 116.95, 116.95, 4000, 'GOOG') ON CONFLICT DO NOTHING, parameters: None
+[2022-07-26 04:27:21,741] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/open_options.py", line 332, in load_historic_data_into_postgres
+    postgres_hook.run(query_insert % str(row))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 211, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 235, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.UndefinedColumn: column "symbol" of relation "historic__goog" does not exist
+LINE 1: ...__GOOG (datetime, high, low, open, close, volume, symbol) VA...
+                                                             ^
+
+[2022-07-26 04:27:21,755] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=GOOG_historic_data, task_id=load_historic_data_into_postgres, execution_date=20220726T042611, start_date=20220726T042721, end_date=20220726T042721
+[2022-07-26 04:27:21,770] {standard_task_runner.py:97} ERROR - Failed to execute job 179 for task load_historic_data_into_postgres (column "symbol" of relation "historic__goog" does not exist
+LINE 1: ...__GOOG (datetime, high, low, open, close, volume, symbol) VA...
+                                                             ^
+; 61456)
+[2022-07-26 04:27:21,815] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-07-26 04:27:21,887] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
