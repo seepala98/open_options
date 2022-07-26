@@ -3486,3 +3486,93 @@
 [2022-07-26 04:41:16,157] {logging_mixin.py:115} INFO - [2022-07-26 04:41:16,157] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_FB to 2022-07-26T01:00:00+00:00, run_after=2022-07-26T01:30:00+00:00
 [2022-07-26 04:41:16,160] {logging_mixin.py:115} INFO - [2022-07-26 04:41:16,160] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_GOOG to 2022-07-26T01:30:00+00:00, run_after=2022-07-26T12:00:00+00:00
 [2022-07-26 04:41:16,171] {processor.py:161} INFO - Processing /opt/airflow/dags/open_options.py took 0.326 seconds
+[2022-07-26 14:46:29,075] {processor.py:153} INFO - Started process (PID=169) to work on /opt/airflow/dags/open_options.py
+[2022-07-26 14:46:29,077] {processor.py:641} INFO - Processing file /opt/airflow/dags/open_options.py for tasks to queue
+[2022-07-26 14:46:29,078] {logging_mixin.py:115} INFO - [2022-07-26 14:46:29,078] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/open_options.py
+[2022-07-26 14:46:29,397] {processor.py:651} INFO - DAG(s) dict_keys(['get_options_data_FB', 'FB_historic_data', 'get_options_data_GOOG', 'GOOG_historic_data']) retrieved from /opt/airflow/dags/open_options.py
+[2022-07-26 14:46:29,449] {logging_mixin.py:115} INFO - [2022-07-26 14:46:29,449] {dag.py:2420} INFO - Sync 4 DAGs
+[2022-07-26 14:46:29,486] {logging_mixin.py:115} INFO - [2022-07-26 14:46:29,486] {dag.py:2972} INFO - Setting next_dagrun for FB_historic_data to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:46:29,490] {logging_mixin.py:115} INFO - [2022-07-26 14:46:29,490] {dag.py:2972} INFO - Setting next_dagrun for GOOG_historic_data to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:46:29,494] {logging_mixin.py:115} INFO - [2022-07-26 14:46:29,494] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_FB to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:46:29,498] {logging_mixin.py:115} INFO - [2022-07-26 14:46:29,498] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_GOOG to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:46:29,515] {processor.py:161} INFO - Processing /opt/airflow/dags/open_options.py took 0.450 seconds
+[2022-07-26 14:46:59,753] {processor.py:153} INFO - Started process (PID=412) to work on /opt/airflow/dags/open_options.py
+[2022-07-26 14:46:59,754] {processor.py:641} INFO - Processing file /opt/airflow/dags/open_options.py for tasks to queue
+[2022-07-26 14:46:59,754] {logging_mixin.py:115} INFO - [2022-07-26 14:46:59,754] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/open_options.py
+[2022-07-26 14:47:00,028] {processor.py:651} INFO - DAG(s) dict_keys(['get_options_data_FB', 'FB_historic_data', 'get_options_data_GOOG', 'GOOG_historic_data']) retrieved from /opt/airflow/dags/open_options.py
+[2022-07-26 14:47:00,087] {logging_mixin.py:115} INFO - [2022-07-26 14:47:00,087] {dag.py:2420} INFO - Sync 4 DAGs
+[2022-07-26 14:47:00,127] {logging_mixin.py:115} INFO - [2022-07-26 14:47:00,127] {dag.py:2972} INFO - Setting next_dagrun for FB_historic_data to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:47:00,134] {logging_mixin.py:115} INFO - [2022-07-26 14:47:00,134] {dag.py:2972} INFO - Setting next_dagrun for GOOG_historic_data to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:47:00,142] {logging_mixin.py:115} INFO - [2022-07-26 14:47:00,142] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_FB to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:47:00,149] {logging_mixin.py:115} INFO - [2022-07-26 14:47:00,149] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_GOOG to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:47:00,170] {processor.py:161} INFO - Processing /opt/airflow/dags/open_options.py took 0.420 seconds
+[2022-07-26 14:47:30,690] {processor.py:153} INFO - Started process (PID=607) to work on /opt/airflow/dags/open_options.py
+[2022-07-26 14:47:30,691] {processor.py:641} INFO - Processing file /opt/airflow/dags/open_options.py for tasks to queue
+[2022-07-26 14:47:30,693] {logging_mixin.py:115} INFO - [2022-07-26 14:47:30,692] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/open_options.py
+[2022-07-26 14:47:30,969] {processor.py:651} INFO - DAG(s) dict_keys(['get_options_data_FB', 'FB_historic_data', 'get_options_data_GOOG', 'GOOG_historic_data']) retrieved from /opt/airflow/dags/open_options.py
+[2022-07-26 14:47:31,015] {logging_mixin.py:115} INFO - [2022-07-26 14:47:31,014] {dag.py:2420} INFO - Sync 4 DAGs
+[2022-07-26 14:47:31,056] {logging_mixin.py:115} INFO - [2022-07-26 14:47:31,056] {dag.py:2972} INFO - Setting next_dagrun for FB_historic_data to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:47:31,061] {logging_mixin.py:115} INFO - [2022-07-26 14:47:31,061] {dag.py:2972} INFO - Setting next_dagrun for GOOG_historic_data to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:47:31,065] {logging_mixin.py:115} INFO - [2022-07-26 14:47:31,065] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_FB to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:47:31,074] {logging_mixin.py:115} INFO - [2022-07-26 14:47:31,074] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_GOOG to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:47:31,100] {processor.py:161} INFO - Processing /opt/airflow/dags/open_options.py took 0.416 seconds
+[2022-07-26 14:48:01,272] {processor.py:153} INFO - Started process (PID=809) to work on /opt/airflow/dags/open_options.py
+[2022-07-26 14:48:01,273] {processor.py:641} INFO - Processing file /opt/airflow/dags/open_options.py for tasks to queue
+[2022-07-26 14:48:01,274] {logging_mixin.py:115} INFO - [2022-07-26 14:48:01,274] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/open_options.py
+[2022-07-26 14:48:01,492] {processor.py:651} INFO - DAG(s) dict_keys(['get_options_data_FB', 'FB_historic_data', 'get_options_data_GOOG', 'GOOG_historic_data']) retrieved from /opt/airflow/dags/open_options.py
+[2022-07-26 14:48:01,545] {logging_mixin.py:115} INFO - [2022-07-26 14:48:01,545] {dag.py:2420} INFO - Sync 4 DAGs
+[2022-07-26 14:48:01,581] {logging_mixin.py:115} INFO - [2022-07-26 14:48:01,581] {dag.py:2972} INFO - Setting next_dagrun for FB_historic_data to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:48:01,590] {logging_mixin.py:115} INFO - [2022-07-26 14:48:01,590] {dag.py:2972} INFO - Setting next_dagrun for GOOG_historic_data to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:48:01,599] {logging_mixin.py:115} INFO - [2022-07-26 14:48:01,598] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_FB to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:48:01,608] {logging_mixin.py:115} INFO - [2022-07-26 14:48:01,607] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_GOOG to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:48:01,624] {processor.py:161} INFO - Processing /opt/airflow/dags/open_options.py took 0.359 seconds
+[2022-07-26 14:48:31,937] {processor.py:153} INFO - Started process (PID=1002) to work on /opt/airflow/dags/open_options.py
+[2022-07-26 14:48:31,938] {processor.py:641} INFO - Processing file /opt/airflow/dags/open_options.py for tasks to queue
+[2022-07-26 14:48:31,939] {logging_mixin.py:115} INFO - [2022-07-26 14:48:31,939] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/open_options.py
+[2022-07-26 14:48:32,176] {processor.py:651} INFO - DAG(s) dict_keys(['get_options_data_FB', 'FB_historic_data', 'get_options_data_GOOG', 'GOOG_historic_data']) retrieved from /opt/airflow/dags/open_options.py
+[2022-07-26 14:48:32,218] {logging_mixin.py:115} INFO - [2022-07-26 14:48:32,218] {dag.py:2420} INFO - Sync 4 DAGs
+[2022-07-26 14:48:32,266] {logging_mixin.py:115} INFO - [2022-07-26 14:48:32,266] {dag.py:2972} INFO - Setting next_dagrun for FB_historic_data to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:48:32,275] {logging_mixin.py:115} INFO - [2022-07-26 14:48:32,275] {dag.py:2972} INFO - Setting next_dagrun for GOOG_historic_data to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:48:32,282] {logging_mixin.py:115} INFO - [2022-07-26 14:48:32,281] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_FB to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:48:32,289] {logging_mixin.py:115} INFO - [2022-07-26 14:48:32,288] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_GOOG to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:48:32,303] {processor.py:161} INFO - Processing /opt/airflow/dags/open_options.py took 0.375 seconds
+[2022-07-26 14:49:02,432] {processor.py:153} INFO - Started process (PID=1205) to work on /opt/airflow/dags/open_options.py
+[2022-07-26 14:49:02,433] {processor.py:641} INFO - Processing file /opt/airflow/dags/open_options.py for tasks to queue
+[2022-07-26 14:49:02,434] {logging_mixin.py:115} INFO - [2022-07-26 14:49:02,434] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/open_options.py
+[2022-07-26 14:49:02,723] {processor.py:651} INFO - DAG(s) dict_keys(['get_options_data_FB', 'FB_historic_data', 'get_options_data_GOOG', 'GOOG_historic_data']) retrieved from /opt/airflow/dags/open_options.py
+[2022-07-26 14:49:02,755] {logging_mixin.py:115} INFO - [2022-07-26 14:49:02,755] {dag.py:2420} INFO - Sync 4 DAGs
+[2022-07-26 14:49:02,784] {logging_mixin.py:115} INFO - [2022-07-26 14:49:02,784] {dag.py:2972} INFO - Setting next_dagrun for FB_historic_data to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:49:02,791] {logging_mixin.py:115} INFO - [2022-07-26 14:49:02,791] {dag.py:2972} INFO - Setting next_dagrun for GOOG_historic_data to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:49:02,796] {logging_mixin.py:115} INFO - [2022-07-26 14:49:02,796] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_FB to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:49:02,803] {logging_mixin.py:115} INFO - [2022-07-26 14:49:02,803] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_GOOG to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:49:02,817] {processor.py:161} INFO - Processing /opt/airflow/dags/open_options.py took 0.394 seconds
+[2022-07-26 14:49:33,279] {processor.py:153} INFO - Started process (PID=1407) to work on /opt/airflow/dags/open_options.py
+[2022-07-26 14:49:33,280] {processor.py:641} INFO - Processing file /opt/airflow/dags/open_options.py for tasks to queue
+[2022-07-26 14:49:33,281] {logging_mixin.py:115} INFO - [2022-07-26 14:49:33,281] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/open_options.py
+[2022-07-26 14:49:33,538] {processor.py:651} INFO - DAG(s) dict_keys(['get_options_data_FB', 'FB_historic_data', 'get_options_data_GOOG', 'GOOG_historic_data']) retrieved from /opt/airflow/dags/open_options.py
+[2022-07-26 14:49:33,579] {logging_mixin.py:115} INFO - [2022-07-26 14:49:33,579] {dag.py:2420} INFO - Sync 4 DAGs
+[2022-07-26 14:49:33,606] {logging_mixin.py:115} INFO - [2022-07-26 14:49:33,606] {dag.py:2972} INFO - Setting next_dagrun for FB_historic_data to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:49:33,613] {logging_mixin.py:115} INFO - [2022-07-26 14:49:33,613] {dag.py:2972} INFO - Setting next_dagrun for GOOG_historic_data to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:49:33,620] {logging_mixin.py:115} INFO - [2022-07-26 14:49:33,619] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_FB to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:49:33,626] {logging_mixin.py:115} INFO - [2022-07-26 14:49:33,626] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_GOOG to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:49:33,641] {processor.py:161} INFO - Processing /opt/airflow/dags/open_options.py took 0.371 seconds
+[2022-07-26 14:50:04,166] {processor.py:153} INFO - Started process (PID=1600) to work on /opt/airflow/dags/open_options.py
+[2022-07-26 14:50:04,167] {processor.py:641} INFO - Processing file /opt/airflow/dags/open_options.py for tasks to queue
+[2022-07-26 14:50:04,168] {logging_mixin.py:115} INFO - [2022-07-26 14:50:04,168] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/open_options.py
+[2022-07-26 14:50:04,425] {processor.py:651} INFO - DAG(s) dict_keys(['get_options_data_FB', 'FB_historic_data', 'get_options_data_GOOG', 'GOOG_historic_data']) retrieved from /opt/airflow/dags/open_options.py
+[2022-07-26 14:50:04,457] {logging_mixin.py:115} INFO - [2022-07-26 14:50:04,457] {dag.py:2420} INFO - Sync 4 DAGs
+[2022-07-26 14:50:04,485] {logging_mixin.py:115} INFO - [2022-07-26 14:50:04,485] {dag.py:2972} INFO - Setting next_dagrun for FB_historic_data to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:50:04,491] {logging_mixin.py:115} INFO - [2022-07-26 14:50:04,491] {dag.py:2972} INFO - Setting next_dagrun for GOOG_historic_data to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:50:04,497] {logging_mixin.py:115} INFO - [2022-07-26 14:50:04,496] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_FB to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:50:04,503] {logging_mixin.py:115} INFO - [2022-07-26 14:50:04,503] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_GOOG to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:50:04,517] {processor.py:161} INFO - Processing /opt/airflow/dags/open_options.py took 0.358 seconds
+[2022-07-26 14:50:34,662] {processor.py:153} INFO - Started process (PID=1803) to work on /opt/airflow/dags/open_options.py
+[2022-07-26 14:50:34,663] {processor.py:641} INFO - Processing file /opt/airflow/dags/open_options.py for tasks to queue
+[2022-07-26 14:50:34,664] {logging_mixin.py:115} INFO - [2022-07-26 14:50:34,664] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/open_options.py
+[2022-07-26 14:50:34,879] {processor.py:651} INFO - DAG(s) dict_keys(['get_options_data_FB', 'FB_historic_data', 'get_options_data_GOOG', 'GOOG_historic_data']) retrieved from /opt/airflow/dags/open_options.py
+[2022-07-26 14:50:34,914] {logging_mixin.py:115} INFO - [2022-07-26 14:50:34,914] {dag.py:2420} INFO - Sync 4 DAGs
+[2022-07-26 14:50:34,947] {logging_mixin.py:115} INFO - [2022-07-26 14:50:34,946] {dag.py:2972} INFO - Setting next_dagrun for FB_historic_data to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:50:34,954] {logging_mixin.py:115} INFO - [2022-07-26 14:50:34,954] {dag.py:2972} INFO - Setting next_dagrun for GOOG_historic_data to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:50:34,962] {logging_mixin.py:115} INFO - [2022-07-26 14:50:34,961] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_FB to 2022-07-26T14:00:00+00:00, run_after=2022-07-26T14:30:00+00:00
+[2022-07-26 14:50:34,972] {logging_mixin.py:115} INFO - [2022-07-26 14:50:34,972] {dag.py:2972} INFO - Setting next_dagrun for get_options_data_GOOG to 2022-07-26T14:30:00+00:00, run_after=2022-07-26T15:00:00+00:00
+[2022-07-26 14:50:34,992] {processor.py:161} INFO - Processing /opt/airflow/dags/open_options.py took 0.333 seconds
